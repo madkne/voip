@@ -55,3 +55,10 @@ sox sound1.wav  -r 8000 -c1 sound1.gsm lowpass 4000 compand 0.02,0.05 -60,-60,-3
 3. copy `sound1.gsm` to `/var/lib/asterisk/sounds/en`
 
 4. now you can play it by `agi.stream_file('sound1')` on python script
+
+### convert mp3 files to gsm files
+
+1. create a folder named `voices/mp3s`
+2. copy mp3 files to `voices/mp3s`
+3. copy `convert_mp3_to_gsm.sh` to `voices/`
+4. run script
